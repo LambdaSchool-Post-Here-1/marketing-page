@@ -1,6 +1,6 @@
 #container {
     padding-top: 100px;
-    margin: 0 auto;
+    margin: 0 auto 5% auto;
     display: flex;
     flex-flow: column wrap;
     justify-items: space-between;
@@ -12,10 +12,23 @@
         .sectpadding();
     }
     #secTwo {
+        margin-top: 10%;
         width: 80%;
         .sectpadding();
         .btns(white, 10px, 40px);
-        a{border: 1px solid aqua;}
+        a {
+            background-color: @orange;
+            border-radius: 5px;
+            border: 2px solid @orange;
+        }
+        a:hover {
+            transition: ease-in .2s;
+            background-color: @darkergrey;
+            color: @orange;
+        }
+        h3 {
+            margin-bottom: 5%;
+        }
         p {
             margin: 1% 0;
         }
@@ -34,15 +47,46 @@
         div {
             width: 30%;
         }
-        @media @mobile {
-            flex-flow: column wrap;
-            justify-content: center;
-            div {
+    }
+    @media @tablet {
+        padding-top: 0;
+        width: 100%;
+        #secOne {
+            width: 80%;
+        }
+        #secTwo {
+            width: 90%;
+            .btns(white, 10px, 50px);
+            img {
                 width: 100%;
+            }
+        }
+        #secThree {
+            flex-flow: column wrap;
+            align-content: center;
+            div {
+                padding: 5%;
+                width: 80%;
+                text-align: left;
+                h3 {
+                    padding-bottom: 2%;
+                    padding-left: 2%;
+                }
             }
         }
     }
     @media @mobile {
         padding-top: 0;
+        width: 100%;
+    #secThree {
+        flex-flow: column wrap;
+        justify-content: center;
+        div {
+            width: 80%;
+            h3 {
+                text-align: center;
+            }
+        }
+    }
     }
 }

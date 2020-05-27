@@ -26,6 +26,19 @@ header {
                 font-size: 1.2rem;
             }
         }
+    @media @tablet {
+        position: static;
+        flex-flow: column wrap;
+        #navbtn {
+            font-size: 1.2rem;
+            .btns(grey, 10px, 20px);
+            margin: 20px 0;
+        }
+        #logo {
+            border-right: 0;
+            padding-right: 0;
+        }
+    }
     @media @mobile {
         position: static;
         flex-flow: column wrap;
@@ -33,7 +46,7 @@ header {
             display: flex;
             flex-flow: column wrap;
             font-size: 1rem;
-            .btns(grey, 5px, 10px);
+            .btns(grey, 10px, 10px);
         }
         #logo {
             border-right: 0;
