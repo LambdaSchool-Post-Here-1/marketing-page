@@ -1,7 +1,12 @@
 body {
-    background-color: #242424;
+    background-image: url(/imgs/bg.png);
+    background-size: cover;
+    background-attachment: fixed;
     font-family: ABeeZee;
     color: white;
+    .italic {
+        font-style: italic;
+    }
     h1 {
         font-size: 3rem;
         font-weight: bold;
@@ -35,6 +40,7 @@ body {
         font-size: 1.3rem;
     }
     p {
+        line-height: 1.4rem;
         @media @tablet {
             line-height: 1.1rem;
             font-size: .9rem;
