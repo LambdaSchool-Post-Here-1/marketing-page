@@ -127,9 +127,14 @@ table {
   border-spacing: 0;
 }
 body {
-  background-color: #242424;
+  background-image: url(/imgs/bg.png);
+  background-size: cover;
+  background-attachment: fixed;
   font-family: ABeeZee;
   color: white;
+}
+body .italic {
+  font-style: italic;
 }
 body h1 {
   font-size: 3rem;
@@ -175,6 +180,9 @@ body h3 {
 body h4 {
   font-size: 1.3rem;
 }
+body p {
+  line-height: 1.2rem;
+}
 @media (max-width: 800px) {
   body p {
     line-height: 1.1rem;
@@ -197,7 +205,7 @@ body h4 {
   }
 }
 header nav {
-  background-color: #2e2e2e;
+  background-color: #242424;
   width: 100%;
   position: fixed;
   display: flex;
