@@ -181,7 +181,7 @@ body h4 {
   font-size: 1.3rem;
 }
 body p {
-  line-height: 1.2rem;
+  line-height: 1.4rem;
 }
 @media (max-width: 800px) {
   body p {
@@ -315,7 +315,6 @@ header nav #logo h1 {
 }
 #container .personContain {
   background-color: #2e2e2e;
-  border: 1px solid grey;
   border-radius: 10px;
   display: flex;
   flex-flow: row wrap;
@@ -375,5 +374,24 @@ header nav #logo h1 {
 @media (max-width: 500px) {
   #container {
     padding-top: 0;
+  }
+  #container .personContain {
+    flex-flow: column wrap;
+  }
+  #container .personContain .imgContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 3%;
+  }
+  #container .personContain .imgContainer img {
+    width: 20%;
+  }
+  #container .personContain .bio {
+    text-align: center;
+    width: 100%;
+  }
+  #container .personContain .nameTitle {
+    justify-content: space-between;
   }
 }

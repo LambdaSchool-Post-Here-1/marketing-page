@@ -7,7 +7,6 @@
     width: 90%;
     .personContain {
         background-color: @darkergrey;
-        border: 1px solid grey;
         border-radius: 10px;
         display: flex;
         flex-flow: row wrap;
@@ -66,5 +65,24 @@
     }
     @media @mobile {
         padding-top: 0;
+        .personContain {
+            flex-flow: column wrap;
+            .imgContainer {
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                padding: 3%;
+                img {
+                    width: 20%;
+                }
+            }
+            .bio {
+                text-align: center;
+                width: 100%;
+            }
+            .nameTitle {
+                justify-content: space-between;
+            }
+        }
     }
 }
