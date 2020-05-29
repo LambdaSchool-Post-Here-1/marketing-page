@@ -316,6 +316,9 @@ header nav #logo h1 {
   text-align: center;
   width: 91%;
 }
+#container p {
+  background-color: rgba(69, 69, 69, 0.8);
+}
 #container #secOne {
   width: 60%;
 }
@@ -373,6 +376,7 @@ header nav #logo h1 {
   font-size: 1.5rem;
 }
 #container #secTwo p {
+  background-color: rgba(69, 69, 69, 0);
   margin: 1% 0;
 }
 #container #secTwo img {
